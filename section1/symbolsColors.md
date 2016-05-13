@@ -1,0 +1,2 @@
+
+# Símbolos y colores

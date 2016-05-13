@@ -1,0 +1,2 @@
+
+# Condiciones en gráficos
