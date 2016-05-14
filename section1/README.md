@@ -1,1 +1,1 @@
-# Introducci�nn a la funci�n plot
+# Introducciónn a la función plot
