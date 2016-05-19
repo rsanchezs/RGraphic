@@ -1,0 +1,47 @@
+Programación en R (Video)
+========================================================
+author:Rubén Sánchez Sancho 
+date: 
+autosize: true
+transition: rotate
+
+![](imagen portada)
+
+
+Section
+========================================================
+type: section
+
+- [Subsection 1](#/id1)
+- [Subsection 2](#/id2)
+- [Subsection 3](#/id3)
+- [Subsection 4](#/id4)
+- [Subsection 5](#/id5)
+
+Subsection 1
+========================================================
+id: id1
+type: sub-section
+source: 
+
+Slide 0
+========================================================
+title:false
+
+Slide 1
+========================================================
+title:false
+
+Subsection 2
+========================================================
+id: id2
+type: sub-section
+source: 
+
+Slide 0
+========================================================
+title:false
+
+Slide 1
+========================================================
+title:false

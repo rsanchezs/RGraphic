@@ -270,18 +270,127 @@ lines(x.points, female.deaths, type = "b", pch = "f")
 
 
 
-
-
-Texto y expresiones matemÃ¡ticas
+Texto y expresiones matemáticas
 ========================================================
 id: id3
 type: sub-section
-source: 01_code03_legends_draft1.R
+source: src/01_code03_legends_draft1.R
+
+En esta sección añadiremos al gráfico información, ecuaciones y símbolos
+
+* Uso de la función __text__
+* Uso de la función __expresión__
+* Ajuste de argumentos o parámetros
+
+
 
 Slide 14
 ========================================================
 title:false
 
+Para los ejemplos de esta sección utilizaremos el data frame __women__. Este conjunto de datos muestra la media de altura y pesos de la mujeres americanas de entre 30-39 años.
+
+
+```r
+head(women)
+```
+
+```
+  height weight
+1     58    115
+2     59    117
+3     60    120
+4     61    123
+5     62    126
+6     63    129
+```
+
+
+Slide 15
+========================================================
+title:false
+
+Crearemos dos vectores que contendran cada una de las variables:
+
+
+```r
+height = women[,1] 
+weight = women[,2]
+```
+
+
+
+Slide 16
+========================================================
+title:false
+
+Utilizaremos la función __plot__ como ya hemos echo en entregas anteriores:
+
+
+```r
+plot(height, weight, xlab = "Height", ylab = "Weight") 
+```
+
+![plot of chunk unnamed-chunk-22](slides-figure/unnamed-chunk-22-1.png)
+
+Slide 17
+========================================================
+title:false
+
+Utilizaremos la función __text__ para añadirle un texto al gráfico:
+
+
+![plot of chunk unnamed-chunk-23](slides-figure/unnamed-chunk-23-1.png)
+
+```r
+text(65, 160, "Mean of height vs. mean of weight")
+```
+
+
+
+Slide 18
+========================================================
+title:false
+
+Utilizamos la función __title__ para añadirle títulos al gráfico:
+
+![plot of chunk unnamed-chunk-25](slides-figure/unnamed-chunk-25-1.png)
+
+
+```r
+title(main = "Women aged 30-39")
+title(sub = expression(mu))
+```
+
+
+
+Slide 19
+========================================================
+title:false
+
+Introducimos una expresión matemática en el gráfico:
+
+![plot of chunk unnamed-chunk-27](slides-figure/unnamed-chunk-27-1.png)
+
+
+```r
+expr = expression(paste(mu, " of height vs. ", mu , " of weight"))
+text(65, 155, expr)
+```
+
+Slide 19
+========================================================
+title:false
+
+Introducimos una equación matemática en el gráfico:
+
+![plot of chunk unnamed-chunk-29](slides-figure/unnamed-chunk-29-1.png)
+
+
+```r
+equation = expression(mu == frac(sum(x[i], i==1, n), n) )
+text(65, 150, equation)
+```
 
 
 
